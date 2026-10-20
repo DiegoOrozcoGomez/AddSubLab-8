@@ -6,7 +6,7 @@ Code and results for the article:
 > Diego Orozco-Gomez, Sergio Ruiz-Obando
 
 The AddSubLab-8 dataset contains 36,000 images of eight additive and
-subtractive manufacturing machines of wo teaching laboratories (mechatronics 
+subtractive manufacturing machines of two teaching laboratories (mechatronics 
 and mechanics), extracted from 247 smartphone videos. Training, validation, 
 and test images come from different videos recorded with the machines placed 
 at different locations, so the test set measures generalization to an unseen 

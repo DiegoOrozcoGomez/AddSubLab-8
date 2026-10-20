@@ -2,16 +2,15 @@
 
 Code and results for the article:
 
-> \*\*Image-Based Recognition of Additive and Subtractive Manufacturing Machines in a Teaching Laboratory: 
-
-The AddSubLab-8 Dataset and a Comparison of CNN, Hybrid, and Transformer Classifiers\*\*
+> \*\*Image-Based Recognition of Additive and Subtractive Manufacturing Machines in a Teaching Laboratory: The AddSubLab-8 Dataset and a Comparison of CNN, Hybrid, and Transformer Classifiers\*\*
 > Diego Orozco-Gomez, Sergio Ruiz-Obando
 
 The AddSubLab-8 dataset contains 36,000 images of eight additive and
-subtractive manufacturing machines of a teaching laboratory, extracted from
-247 smartphone videos. Training, validation, and test images come from
-different videos recorded with the machines placed at different locations, so
-the test set measures generalization to an unseen background and viewpoint.
+subtractive manufacturing machines of wo teaching laboratories (mechatronics 
+and mechanics), extracted from 247 smartphone videos. Training, validation, 
+and test images come from different videos recorded with the machines placed 
+at different locations, so the test set measures generalization to an unseen 
+background and viewpoint.
 
 This repository compares eight ImageNet-pretrained architectures (five CNNs,
 one hybrid CNN + Transformer, and two Transformers) on the dataset, with
@@ -153,12 +152,6 @@ same selected hyperparameters, before the final protocol was aligned with
 the 15-epoch search. They are reported as supplementary material. To repeat
 them, set `MAX\_EPOCHS = 50` and `PATIENCE = 10` in `train.py` and use a
 different `--output` folder.
-
-## Citation
-
-```
-\[BibTeX entry to be added after publication]
-```
 
 ## License
 

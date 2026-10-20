@@ -1,0 +1,19 @@
+{
+  "model": "efficientnet_b0",
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "parameters": 4017796,
+  "gflops": 0.769089984,
+  "gmacs": 0.384544992,
+  "cpu_latency_ms": 14.914613332560597,
+  "cpu_latency_std_ms": 1.3845825625032695,
+  "gpu_fp32_latency_ms": 6.496248000185005,
+  "gpu_fp32_latency_std_ms": 0.4359830865561533,
+  "gpu_bf16_latency_ms": 9.705700000631623,
+  "gpu_bf16_latency_std_ms": 0.627458818158716,
+  "gpu_bf16_throughput_img_s": 3526.9623411039447,
+  "inference_memory_batch32_gb": 0.23000240325927734
+}

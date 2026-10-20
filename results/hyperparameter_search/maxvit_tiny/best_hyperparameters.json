@@ -1,0 +1,11 @@
+{
+  "model": "maxvit_tiny",
+  "lr": 7.50195444362012e-05,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.0,
+  "val_f1_macro": 1.0,
+  "val_loss": 0.00020240085560544686,
+  "val_f1_last_epochs": 1.0,
+  "trial": "trial_5925ae9a03",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

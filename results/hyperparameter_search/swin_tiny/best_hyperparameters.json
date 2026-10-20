@@ -1,0 +1,11 @@
+{
+  "model": "swin_tiny",
+  "lr": 9.829247610742234e-05,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.1,
+  "val_f1_macro": 1.0,
+  "val_loss": 0.10165610238909721,
+  "val_f1_last_epochs": 1.0,
+  "trial": "trial_105d41909d",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

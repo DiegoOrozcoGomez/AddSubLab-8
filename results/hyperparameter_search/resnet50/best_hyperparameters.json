@@ -1,0 +1,11 @@
+{
+  "model": "resnet50",
+  "lr": 0.0009039575873246983,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.1,
+  "val_f1_macro": 1.0,
+  "val_loss": 0.11198486983776093,
+  "val_f1_last_epochs": 1.0,
+  "trial": "trial_ddde29f639",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

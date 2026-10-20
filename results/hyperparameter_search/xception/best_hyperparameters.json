@@ -1,0 +1,11 @@
+{
+  "model": "xception",
+  "lr": 0.0007232371232294031,
+  "weight_decay": 0.1,
+  "label_smoothing": 0.1,
+  "val_f1_macro": 0.9993749960937256,
+  "val_loss": 0.1450288799777627,
+  "val_f1_last_epochs": 0.9921982315146487,
+  "trial": "trial_02045d313f",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

@@ -1,0 +1,6 @@
+runs/
+analysis/
+analysis_runs/
+weights/
+__pycache__/
+*.pt

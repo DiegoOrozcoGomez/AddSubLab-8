@@ -1,0 +1,317 @@
+{
+  "model": "vit_base",
+  "timm": "vit_base_patch16_224.augreg_in1k",
+  "category": "Pure Transformer",
+  "seed": 31415,
+  "max_epochs": 15,
+  "patience": 5,
+  "hyperparameters": {
+    "lr": 7.50195444362012e-05,
+    "weight_decay": 0.05,
+    "label_smoothing": 0.0
+  },
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "interpolation": "bicubic",
+  "micro_batch": 32,
+  "gradient_accumulation": 1,
+  "best_epoch": 1,
+  "epochs_trained": 6,
+  "stop_reason": "early stopping (5 epochs without val_loss improvement)",
+  "training_time_s": 466.59440129998256,
+  "test_evaluation_time_s": 3.06463830001303,
+  "test_metrics": {
+    "accuracy": 0.8785,
+    "precision_macro": 0.9166593335780286,
+    "recall_macro": 0.8785000000000001,
+    "f1_macro": 0.8737827377495151,
+    "precision_weighted": 0.9166593335780285,
+    "recall_weighted": 0.8785,
+    "f1_weighted": 0.873782737749515,
+    "mcc": 0.8689321195459779,
+    "kappa": 0.8611428571428572,
+    "roc_auc_ovr_macro": 0.9977612142857143,
+    "ece": 0.08455226596817376,
+    "per_class": {
+      "delta_3d_printer": {
+        "precision": 1.0,
+        "recall": 0.948,
+        "f1": 0.973305954825462,
+        "support": 500
+      },
+      "fdm_3d_printer_1": {
+        "precision": 0.5707762557077626,
+        "recall": 1.0,
+        "f1": 0.7267441860465116,
+        "support": 500
+      },
+      "fdm_3d_printer_2": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 500
+      },
+      "resin_3d_printer": {
+        "precision": 0.8591065292096219,
+        "recall": 1.0,
+        "f1": 0.9242144177449169,
+        "support": 500
+      },
+      "bench_drill": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 500
+      },
+      "mini_cnc_router": {
+        "precision": 0.9230769230769231,
+        "recall": 0.432,
+        "f1": 0.5885558583106267,
+        "support": 500
+      },
+      "mini_metal_horizontal_milling_machine": {
+        "precision": 0.9803149606299213,
+        "recall": 0.996,
+        "f1": 0.9880952380952381,
+        "support": 500
+      },
+      "mini_metal_lathe": {
+        "precision": 1.0,
+        "recall": 0.652,
+        "f1": 0.7893462469733656,
+        "support": 500
+      }
+    },
+    "confusion_matrix": [
+      [
+        474,
+        26,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        500,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        500,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        500,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        500,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        284,
+        0,
+        0,
+        0,
+        216,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        498,
+        0
+      ],
+      [
+        0,
+        64,
+        0,
+        82,
+        0,
+        18,
+        10,
+        326
+      ]
+    ]
+  },
+  "validation_metrics": {
+    "accuracy": 0.78875,
+    "precision_macro": 0.8339726618592247,
+    "recall_macro": 0.78875,
+    "f1_macro": 0.7933804890201788,
+    "precision_weighted": 0.8339726618592246,
+    "recall_weighted": 0.78875,
+    "f1_weighted": 0.7933804890201789,
+    "mcc": 0.763189602265847,
+    "kappa": 0.7585714285714286,
+    "roc_auc_ovr_macro": 0.9628252232142858,
+    "ece": 0.020160280871205034,
+    "per_class": {
+      "delta_3d_printer": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 800
+      },
+      "fdm_3d_printer_1": {
+        "precision": 0.629045643153527,
+        "recall": 0.9475,
+        "f1": 0.7561097256857855,
+        "support": 800
+      },
+      "fdm_3d_printer_2": {
+        "precision": 0.9975062344139651,
+        "recall": 1.0,
+        "f1": 0.9987515605493134,
+        "support": 800
+      },
+      "resin_3d_printer": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 800
+      },
+      "bench_drill": {
+        "precision": 0.22554890219560877,
+        "recall": 0.2825,
+        "f1": 0.25083240843507215,
+        "support": 800
+      },
+      "mini_cnc_router": {
+        "precision": 0.8817330210772834,
+        "recall": 0.94125,
+        "f1": 0.9105199516324063,
+        "support": 800
+      },
+      "mini_metal_horizontal_milling_machine": {
+        "precision": 0.9379474940334129,
+        "recall": 0.49125,
+        "f1": 0.6447908121410992,
+        "support": 800
+      },
+      "mini_metal_lathe": {
+        "precision": 1.0,
+        "recall": 0.6475,
+        "f1": 0.7860394537177542,
+        "support": 800
+      }
+    },
+    "confusion_matrix": [
+      [
+        800,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        758,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        800,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        800,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        447,
+        0,
+        0,
+        226,
+        101,
+        26,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        47,
+        753,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        407,
+        0,
+        393,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        280,
+        0,
+        0,
+        518
+      ]
+    ]
+  },
+  "end_date": "2026-10-02T19:12:06"
+}

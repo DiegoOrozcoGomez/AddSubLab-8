@@ -1,0 +1,19 @@
+{
+  "model": "resnet50",
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "parameters": 23524424,
+  "gflops": 8.17430528,
+  "gmacs": 4.08715264,
+  "cpu_latency_ms": 21.2689433353565,
+  "cpu_latency_std_ms": 1.1144227804415465,
+  "gpu_fp32_latency_ms": 4.8763780007720925,
+  "gpu_fp32_latency_std_ms": 0.3569421780707669,
+  "gpu_bf16_latency_ms": 7.094084998243488,
+  "gpu_bf16_latency_std_ms": 0.7209646079259266,
+  "gpu_bf16_throughput_img_s": 2607.7694684674902,
+  "inference_memory_batch32_gb": 0.28452157974243164
+}

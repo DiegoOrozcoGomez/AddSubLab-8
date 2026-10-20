@@ -1,0 +1,11 @@
+# PyTorch with CUDA: install first from https://pytorch.org (the article used 2.14.1, CUDA 13.2)
+torch>=2.4
+timm==1.0.30
+optuna==5.0.0
+numpy>=2.0
+scikit-learn==1.7.2
+pillow
+psutil
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8

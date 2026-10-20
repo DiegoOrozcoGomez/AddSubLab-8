@@ -1,0 +1,19 @@
+{
+  "model": "xception",
+  "input_size": [
+    3,
+    299,
+    299
+  ],
+  "parameters": 20823344,
+  "gflops": 16.71074376,
+  "gmacs": 8.35537188,
+  "cpu_latency_ms": 35.77744666545186,
+  "cpu_latency_std_ms": 3.763995020168824,
+  "gpu_fp32_latency_ms": 3.898813998384867,
+  "gpu_fp32_latency_std_ms": 0.3560856615975753,
+  "gpu_bf16_latency_ms": 6.046441997459624,
+  "gpu_bf16_latency_std_ms": 0.36191911994219955,
+  "gpu_bf16_throughput_img_s": 1292.1653059032558,
+  "inference_memory_batch32_gb": 0.7045416831970215
+}

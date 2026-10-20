@@ -1,0 +1,106 @@
+{
+  "models": {
+    "resnet50": {
+      "timm": "resnet50.a1_in1k",
+      "category": "Classical CNN"
+    },
+    "densenet121": {
+      "timm": "densenet121.tv_in1k",
+      "category": "Classical CNN"
+    },
+    "xception": {
+      "timm": "legacy_xception.tf_in1k",
+      "category": "Classical CNN (separable conv.)"
+    },
+    "efficientnet_b0": {
+      "timm": "efficientnet_b0.ra_in1k",
+      "category": "Efficient CNN"
+    },
+    "convnext_tiny": {
+      "timm": "convnext_tiny.fb_in1k",
+      "category": "Modernized CNN"
+    },
+    "maxvit_tiny": {
+      "timm": "maxvit_tiny_tf_224.in1k",
+      "category": "Hybrid CNN + Transformer"
+    },
+    "swin_tiny": {
+      "timm": "swin_tiny_patch4_window7_224.ms_in1k",
+      "category": "Hierarchical Transformer"
+    },
+    "vit_base": {
+      "timm": "vit_base_patch16_224.augreg_in1k",
+      "category": "Pure Transformer"
+    }
+  },
+  "seeds": [
+    42,
+    1234,
+    2025,
+    7,
+    31415
+  ],
+  "search": {
+    "seed": 0,
+    "trials_per_model": 12,
+    "max_epochs": 15,
+    "patience": 5,
+    "pruning_start_epoch": 5,
+    "initial_random_trials": 5,
+    "space": {
+      "lr": [
+        1e-05,
+        0.001
+      ],
+      "weight_decay": [
+        0.01,
+        0.05,
+        0.1
+      ],
+      "label_smoothing": [
+        0.0,
+        0.1
+      ]
+    },
+    "selection_metric": "mean validation macro F1 over the last 5 epochs (stability); tie-break: F1 at the best epoch; then lowest val_loss"
+  },
+  "final_training": {
+    "max_epochs": 15,
+    "patience": 5,
+    "min_delta": 0.0001,
+    "stopping_criterion": "val_loss (cross-entropy without label smoothing)"
+  },
+  "duration_ablation": {
+    "models": [
+      "resnet50",
+      "swin_tiny",
+      "densenet121",
+      "xception",
+      "vit_base"
+    ],
+    "max_epochs": 30,
+    "patience": 30,
+    "seeds": [
+      42,
+      1234
+    ]
+  },
+  "common": {
+    "preprocessing": "direct resize (squash) to the native input size of each model, with its interpolation and normalization",
+    "optimizer": "AdamW (no weight decay on biases and normalization layers)",
+    "scheduler": "linear warmup + cosine, per step",
+    "warmup_epochs": 3,
+    "effective_batch": 32,
+    "precision": "mixed bfloat16",
+    "grad_clip": 1.0,
+    "augmentation": {
+      "horizontal_flip": true,
+      "max_zoom": 1.25,
+      "rotation_degrees": 10.0,
+      "brightness": 0.2,
+      "contrast": 0.2,
+      "saturation": 0.2
+    },
+    "deterministic": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "model": "convnext_tiny",
+  "lr": 0.0003728160826604057,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.0,
+  "val_f1_macro": 1.0,
+  "val_loss": 0.0038828180987547966,
+  "val_f1_last_epochs": 1.0,
+  "trial": "trial_38380ae27e",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

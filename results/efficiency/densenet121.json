@@ -1,0 +1,19 @@
+{
+  "model": "densenet121",
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "parameters": 6962056,
+  "gflops": 5.666291712,
+  "gmacs": 2.833145856,
+  "cpu_latency_ms": 40.002023330695614,
+  "cpu_latency_std_ms": 6.6806376107466106,
+  "gpu_fp32_latency_ms": 13.179083998838905,
+  "gpu_fp32_latency_std_ms": 0.6602910736223654,
+  "gpu_bf16_latency_ms": 16.10837800108129,
+  "gpu_bf16_latency_std_ms": 0.902767595860549,
+  "gpu_bf16_throughput_img_s": 1939.850097355142,
+  "inference_memory_batch32_gb": 0.21180200576782227
+}

@@ -1,0 +1,19 @@
+{
+  "model": "convnext_tiny",
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "parameters": 27826280,
+  "gflops": 8.909538816,
+  "gmacs": 4.454769408,
+  "cpu_latency_ms": 19.27181333109426,
+  "cpu_latency_std_ms": 2.9305690831427493,
+  "gpu_fp32_latency_ms": 4.3439050010056235,
+  "gpu_fp32_latency_std_ms": 0.29444181561086824,
+  "gpu_bf16_latency_ms": 6.946556000912096,
+  "gpu_bf16_latency_std_ms": 0.37409823083040955,
+  "gpu_bf16_throughput_img_s": 1927.1114268945655,
+  "inference_memory_batch32_gb": 0.3925786018371582
+}

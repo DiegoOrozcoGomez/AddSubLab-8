@@ -1,0 +1,19 @@
+{
+  "model": "swin_tiny",
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "parameters": 27525506,
+  "gflops": 8.9796096,
+  "gmacs": 4.4898048,
+  "cpu_latency_ms": 32.32885666560227,
+  "cpu_latency_std_ms": 17.074490459235722,
+  "gpu_fp32_latency_ms": 9.28159100090852,
+  "gpu_fp32_latency_std_ms": 0.6047993283054295,
+  "gpu_bf16_latency_ms": 12.226927000156138,
+  "gpu_bf16_latency_std_ms": 0.6858628773574371,
+  "gpu_bf16_throughput_img_s": 1303.377553507509,
+  "inference_memory_batch32_gb": 0.5098509788513184
+}

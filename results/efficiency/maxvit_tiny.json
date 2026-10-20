@@ -1,0 +1,19 @@
+{
+  "model": "maxvit_tiny",
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "parameters": 30407632,
+  "gflops": 11.102657504,
+  "gmacs": 5.551328752,
+  "cpu_latency_ms": 63.71177999923626,
+  "cpu_latency_std_ms": 2.9561458829242118,
+  "gpu_fp32_latency_ms": 20.742333998787217,
+  "gpu_fp32_latency_std_ms": 1.0331537119773284,
+  "gpu_bf16_latency_ms": 29.029140997154173,
+  "gpu_bf16_latency_std_ms": 1.130423194602563,
+  "gpu_bf16_throughput_img_s": 946.112954135351,
+  "inference_memory_batch32_gb": 0.7850370407104492
+}

@@ -1,0 +1,19 @@
+{
+  "model": "vit_base",
+  "input_size": [
+    3,
+    224,
+    224
+  ],
+  "parameters": 85804808,
+  "gflops": 33.69547776,
+  "gmacs": 16.84773888,
+  "cpu_latency_ms": 35.13492333489315,
+  "cpu_latency_std_ms": 2.6137864499433356,
+  "gpu_fp32_latency_ms": 3.8706850016023964,
+  "gpu_fp32_latency_std_ms": 0.419789507879316,
+  "gpu_bf16_latency_ms": 5.273492998967413,
+  "gpu_bf16_latency_std_ms": 0.4391633193940934,
+  "gpu_bf16_throughput_img_s": 1224.590387060708,
+  "inference_memory_batch32_gb": 0.6635489463806152
+}

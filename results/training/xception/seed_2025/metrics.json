@@ -18,11 +18,11 @@
   "interpolation": "bicubic",
   "micro_batch": 32,
   "gradient_accumulation": 1,
-  "best_epoch": 3,
-  "epochs_trained": 8,
+  "best_epoch": 1,
+  "epochs_trained": 6,
   "stop_reason": "early stopping (5 epochs without val_loss improvement)",
-  "training_time_s": 595.5751468000235,
-  "test_evaluation_time_s": 3.144757700007176,
+  "training_time_s": 445.69636880001053,
+  "test_evaluation_time_s": 3.111967900011223,
   "test_metrics": {
     "accuracy": 1.0,
     "precision_macro": 1.0,
@@ -34,7 +34,7 @@
     "mcc": 1.0,
     "kappa": 1.0,
     "roc_auc_ovr_macro": 1.0,
-    "ece": 0.080278092764318,
+    "ece": 0.09286225613951682,
     "per_class": {
       "delta_3d_printer": {
         "precision": 1.0,
@@ -179,7 +179,7 @@
     "mcc": 1.0,
     "kappa": 1.0,
     "roc_auc_ovr_macro": 1.0,
-    "ece": 0.07096848453395069,
+    "ece": 0.07349923219531775,
     "per_class": {
       "delta_3d_printer": {
         "precision": 1.0,
@@ -313,5 +313,6 @@
       ]
     ]
   },
-  "end_date": "2026-10-02T15:19:08"
+  "protocol_note": "trained for the full 15 epochs with the test set evaluated after every epoch; early stopping (patience 5, min_delta 0.0001) applied post hoc",
+  "end_date": "2026-11-23T21:07:03"
 }

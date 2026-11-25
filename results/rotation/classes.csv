@@ -1,0 +1,9 @@
+class_id,class_folder,class_name,abbreviation,manufacturing_type,train,validation,test
+1,delta_3d_printer,Delta 3D Printer,Delta 3D,additive,3200,800,500
+2,fdm_3d_printer_1,Fused Deposition Modeling 3D Printer 1,FDM 3D 1,additive,3200,800,500
+3,fdm_3d_printer_2,Fused Deposition Modeling 3D Printer 2,FDM 3D 2,additive,3200,800,500
+4,resin_3d_printer,Resin 3D Printer,Resin 3D,additive,3200,800,500
+5,bench_drill,Bench Drill,Bench drill,subtractive,3200,800,500
+6,mini_cnc_router,Mini CNC Router,Mini CNC router,subtractive,3200,800,500
+7,mini_metal_horizontal_milling_machine,Mini Metal Horizontal Milling Machine,Mini H. mill,subtractive,3200,800,500
+8,mini_metal_lathe,Mini Metal Lathe,Mini lathe,subtractive,3200,800,500

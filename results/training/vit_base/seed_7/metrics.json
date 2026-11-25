@@ -18,40 +18,40 @@
   "interpolation": "bicubic",
   "micro_batch": 32,
   "gradient_accumulation": 1,
-  "best_epoch": 13,
-  "epochs_trained": 15,
-  "stop_reason": "maximum epochs",
-  "training_time_s": 1169.552329799917,
-  "test_evaluation_time_s": 3.1134032999980263,
+  "best_epoch": 1,
+  "epochs_trained": 6,
+  "stop_reason": "early stopping (5 epochs without val_loss improvement)",
+  "training_time_s": 468.5244802000816,
+  "test_evaluation_time_s": 3.0697802000213414,
   "test_metrics": {
-    "accuracy": 0.7205,
-    "precision_macro": 0.8429126609080082,
-    "recall_macro": 0.7204999999999999,
-    "f1_macro": 0.7071402295324042,
-    "precision_weighted": 0.8429126609080081,
-    "recall_weighted": 0.7205,
-    "f1_weighted": 0.7071402295324042,
-    "mcc": 0.7041941883096079,
-    "kappa": 0.6805714285714286,
-    "roc_auc_ovr_macro": 0.9741623571428571,
-    "ece": 0.22957583002746107,
+    "accuracy": 0.7865,
+    "precision_macro": 0.8976898838175877,
+    "recall_macro": 0.7865,
+    "f1_macro": 0.7408249941963487,
+    "precision_weighted": 0.8976898838175877,
+    "recall_weighted": 0.7865,
+    "f1_weighted": 0.7408249941963486,
+    "mcc": 0.781021623501412,
+    "kappa": 0.756,
+    "roc_auc_ovr_macro": 0.9989891428571429,
+    "ece": 0.057133352980017635,
     "per_class": {
       "delta_3d_printer": {
         "precision": 1.0,
-        "recall": 0.34,
-        "f1": 0.5074626865671642,
+        "recall": 0.992,
+        "f1": 0.9959839357429718,
         "support": 500
       },
       "fdm_3d_printer_1": {
-        "precision": 0.39093041438623927,
+        "precision": 0.41562759767248547,
         "recall": 1.0,
-        "f1": 0.5621135469364812,
+        "f1": 0.5871990604815033,
         "support": 500
       },
       "fdm_3d_printer_2": {
-        "precision": 0.9861932938856016,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1": 0.9930486593843099,
+        "f1": 1.0,
         "support": 500
       },
       "resin_3d_printer": {
@@ -61,34 +61,34 @@
         "support": 500
       },
       "bench_drill": {
-        "precision": 0.7763975155279503,
+        "precision": 1.0,
         "recall": 1.0,
-        "f1": 0.8741258741258742,
+        "f1": 1.0,
         "support": 500
       },
       "mini_cnc_router": {
         "precision": 1.0,
-        "recall": 0.23,
-        "f1": 0.37398373983739835,
+        "recall": 0.306,
+        "f1": 0.4686064318529862,
         "support": 500
       },
       "mini_metal_horizontal_milling_machine": {
-        "precision": 0.6424116424116424,
-        "recall": 0.618,
-        "f1": 0.6299694189602446,
+        "precision": 0.765891472868217,
+        "recall": 0.988,
+        "f1": 0.862882096069869,
         "support": 500
       },
       "mini_metal_lathe": {
-        "precision": 0.9473684210526315,
-        "recall": 0.576,
-        "f1": 0.7164179104477612,
+        "precision": 1.0,
+        "recall": 0.006,
+        "f1": 0.011928429423459244,
         "support": 500
       }
     },
     "confusion_matrix": [
       [
-        170,
-        330,
+        496,
+        4,
         0,
         0,
         0,
@@ -138,137 +138,12 @@
       ],
       [
         0,
-        283,
-        0,
-        0,
-        70,
-        115,
-        24,
-        8
-      ],
-      [
-        0,
-        135,
-        0,
-        0,
-        48,
-        0,
-        309,
-        8
-      ],
-      [
-        0,
-        31,
-        7,
-        0,
-        26,
-        0,
-        148,
-        288
-      ]
-    ]
-  },
-  "validation_metrics": {
-    "accuracy": 0.9953125,
-    "precision_macro": 0.9954120739729204,
-    "recall_macro": 0.9953125,
-    "f1_macro": 0.9953073694678594,
-    "precision_weighted": 0.9954120739729204,
-    "recall_weighted": 0.9953125,
-    "f1_weighted": 0.9953073694678594,
-    "mcc": 0.9946585930771051,
-    "kappa": 0.9946428571428572,
-    "roc_auc_ovr_macro": 0.9999988002232143,
-    "ece": 0.002101957853883501,
-    "per_class": {
-      "delta_3d_printer": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "support": 800
-      },
-      "fdm_3d_printer_1": {
-        "precision": 0.9888751545117429,
-        "recall": 1.0,
-        "f1": 0.9944064636420137,
-        "support": 800
-      },
-      "fdm_3d_printer_2": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "support": 800
-      },
-      "resin_3d_printer": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "support": 800
-      },
-      "bench_drill": {
-        "precision": 1.0,
-        "recall": 0.9925,
-        "f1": 0.9962358845671268,
-        "support": 800
-      },
-      "mini_cnc_router": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "support": 800
-      },
-      "mini_metal_horizontal_milling_machine": {
-        "precision": 0.97442143727162,
-        "recall": 1.0,
-        "f1": 0.987045033929673,
-        "support": 800
-      },
-      "mini_metal_lathe": {
-        "precision": 1.0,
-        "recall": 0.97,
-        "f1": 0.9847715736040609,
-        "support": 800
-      }
-    },
-    "confusion_matrix": [
-      [
-        800,
+        342,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        800,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        800,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        800,
-        0,
-        0,
-        0,
+        153,
+        5,
         0
       ],
       [
@@ -276,42 +151,168 @@
         6,
         0,
         0,
-        794,
         0,
         0,
+        494,
         0
       ],
       [
         0,
+        351,
         0,
         0,
         0,
         0,
-        800,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        800,
-        0
-      ],
-      [
-        0,
-        3,
-        0,
-        0,
-        0,
-        0,
-        21,
-        776
+        146,
+        3
       ]
     ]
   },
-  "end_date": "2026-10-02T17:48:02"
+  "validation_metrics": {
+    "accuracy": 0.9175,
+    "precision_macro": 0.9403802314905959,
+    "recall_macro": 0.9175,
+    "f1_macro": 0.9149682470998963,
+    "precision_weighted": 0.940380231490596,
+    "recall_weighted": 0.9175,
+    "f1_weighted": 0.9149682470998962,
+    "mcc": 0.9095193104615658,
+    "kappa": 0.9057142857142857,
+    "roc_auc_ovr_macro": 0.9970086495535715,
+    "ece": 0.05082808444276452,
+    "per_class": {
+      "delta_3d_printer": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 800
+      },
+      "fdm_3d_printer_1": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 800
+      },
+      "fdm_3d_printer_2": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 800
+      },
+      "resin_3d_printer": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 800
+      },
+      "bench_drill": {
+        "precision": 0.617039586919105,
+        "recall": 0.89625,
+        "f1": 0.7308868501529052,
+        "support": 800
+      },
+      "mini_cnc_router": {
+        "precision": 1.0,
+        "recall": 0.9425,
+        "f1": 0.9703989703989704,
+        "support": 800
+      },
+      "mini_metal_horizontal_milling_machine": {
+        "precision": 0.9060022650056625,
+        "recall": 1.0,
+        "f1": 0.9506833036244801,
+        "support": 800
+      },
+      "mini_metal_lathe": {
+        "precision": 1.0,
+        "recall": 0.50125,
+        "f1": 0.6677768526228143,
+        "support": 800
+      }
+    },
+    "confusion_matrix": [
+      [
+        800,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        800,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        800,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        800,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        717,
+        0,
+        83,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        46,
+        754,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        800,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        399,
+        0,
+        0,
+        401
+      ]
+    ]
+  },
+  "protocol_note": "trained for the full 15 epochs with the test set evaluated after every epoch; early stopping (patience 5, min_delta 0.0001) applied post hoc",
+  "end_date": "2026-11-24T00:26:51"
 }

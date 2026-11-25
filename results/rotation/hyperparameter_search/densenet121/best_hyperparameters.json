@@ -1,0 +1,11 @@
+{
+  "model": "densenet121",
+  "lr": 3.965599898814031e-05,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.0,
+  "val_f1_macro": 0.9984999459980559,
+  "val_loss": 0.003984079434780142,
+  "val_f1_last_epochs": 0.997844527476704,
+  "trial": "trial_83136db14b",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

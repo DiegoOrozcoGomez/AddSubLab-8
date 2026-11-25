@@ -1,0 +1,11 @@
+{
+  "model": "vit_base",
+  "lr": 1.7240460099242286e-05,
+  "weight_decay": 0.1,
+  "label_smoothing": 0.0,
+  "val_f1_macro": 0.8950207869729967,
+  "val_loss": 0.2566225589007372,
+  "val_f1_last_epochs": 0.8703165351655906,
+  "trial": "trial_0fede130e5",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

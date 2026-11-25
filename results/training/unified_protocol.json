@@ -1,0 +1,17 @@
+{
+  "seeds": [
+    42,
+    1234,
+    2025,
+    7,
+    31415,
+    123,
+    777,
+    2718,
+    99,
+    4242
+  ],
+  "max_epochs": 15,
+  "patience": 5,
+  "note": "all runs trained for the full 15 epochs with the test set evaluated after every epoch; early stopping applied post hoc; best.pt = weights of the selected epoch"
+}

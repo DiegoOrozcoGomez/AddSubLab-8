@@ -1,0 +1,13 @@
+panel,file,frame_index,errors,runs,most_frequent_prediction
+(a),test/mini_metal_lathe/mini_metal_lathe_test_0478.jpg,477,47,80,Mini CNC Router
+(b),test/mini_metal_lathe/mini_metal_lathe_test_0006.jpg,5,46,80,Mini CNC Router
+(c),test/mini_metal_lathe/mini_metal_lathe_test_0040.jpg,39,46,80,Mini CNC Router
+(d),test/mini_metal_lathe/mini_metal_lathe_test_0018.jpg,17,45,80,Mini CNC Router
+(e),test/mini_metal_lathe/mini_metal_lathe_test_0029.jpg,28,43,80,Mini CNC Router
+(f),test/mini_metal_lathe/mini_metal_lathe_test_0072.jpg,71,39,80,Fused Deposition Modeling 3D Printer 1
+(g),test/mini_metal_lathe/mini_metal_lathe_test_0255.jpg,254,37,80,Fused Deposition Modeling 3D Printer 1
+(h),test/mini_metal_lathe/mini_metal_lathe_test_0268.jpg,267,35,80,Mini Metal Horizontal Milling Machine
+(i),test/mini_metal_lathe/mini_metal_lathe_test_0394.jpg,393,35,80,Fused Deposition Modeling 3D Printer 1
+(j),test/mini_metal_lathe/mini_metal_lathe_test_0424.jpg,423,35,80,Mini Metal Horizontal Milling Machine
+(k),test/mini_metal_lathe/mini_metal_lathe_test_0409.jpg,408,33,80,Fused Deposition Modeling 3D Printer 1
+(l),test/mini_metal_lathe/mini_metal_lathe_test_0488.jpg,487,32,80,Mini CNC Router

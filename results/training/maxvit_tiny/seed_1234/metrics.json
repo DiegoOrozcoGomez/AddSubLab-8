@@ -21,8 +21,8 @@
   "best_epoch": 11,
   "epochs_trained": 15,
   "stop_reason": "maximum epochs",
-  "training_time_s": 1405.059732900001,
-  "test_evaluation_time_s": 4.077084999997169,
+  "training_time_s": 1414.0181294999202,
+  "test_evaluation_time_s": 4.039314099994954,
   "test_metrics": {
     "accuracy": 1.0,
     "precision_macro": 1.0,
@@ -34,7 +34,7 @@
     "mcc": 1.0,
     "kappa": 1.0,
     "roc_auc_ovr_macro": 1.0,
-    "ece": 0.0010977049469947815,
+    "ece": 0.00034327925741672513,
     "per_class": {
       "delta_3d_printer": {
         "precision": 1.0,
@@ -179,7 +179,7 @@
     "mcc": 1.0,
     "kappa": 1.0,
     "roc_auc_ovr_macro": 1.0,
-    "ece": 6.073713302612305e-05,
+    "ece": 6.16312026977539e-05,
     "per_class": {
       "delta_3d_printer": {
         "precision": 1.0,
@@ -313,5 +313,6 @@
       ]
     ]
   },
-  "end_date": "2026-10-02T14:26:46"
+  "protocol_note": "trained for the full 15 epochs with the test set evaluated after every epoch; early stopping (patience 5, min_delta 0.0001) applied post hoc",
+  "end_date": "2026-11-23T19:49:13"
 }

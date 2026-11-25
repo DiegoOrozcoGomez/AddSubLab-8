@@ -1,0 +1,13 @@
+panel,file,frame_index,errors,runs,most_frequent_prediction
+(a),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0023.jpg,22,18,80,Fused Deposition Modeling 3D Printer 1
+(b),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0002.jpg,1,17,80,Fused Deposition Modeling 3D Printer 1
+(c),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0201.jpg,200,16,80,Mini CNC Router
+(d),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0035.jpg,34,15,80,Fused Deposition Modeling 3D Printer 1
+(e),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0065.jpg,64,15,80,Fused Deposition Modeling 3D Printer 1
+(f),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0093.jpg,92,15,80,Fused Deposition Modeling 3D Printer 1
+(g),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0013.jpg,12,14,80,Fused Deposition Modeling 3D Printer 1
+(h),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0053.jpg,52,14,80,Fused Deposition Modeling 3D Printer 1
+(i),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0129.jpg,128,14,80,Fused Deposition Modeling 3D Printer 1
+(j),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0212.jpg,211,13,80,Mini CNC Router
+(k),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0245.jpg,244,13,80,Mini CNC Router
+(l),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0078.jpg,77,12,80,Fused Deposition Modeling 3D Printer 1

@@ -1,0 +1,60 @@
+{
+  "model": "maxvit_tiny",
+  "seed": 1234,
+  "hyperparameters": {
+    "lr": 7.50195444362012e-05,
+    "weight_decay": 0.05,
+    "label_smoothing": 0.0
+  },
+  "best_epoch": 1,
+  "epochs_trained": 6,
+  "train_images": 6400,
+  "validation_metrics": {
+    "accuracy": 0.28625,
+    "f1_macro": 0.2865794490888484,
+    "f1_shifted": 0.19112162244075176,
+    "f1_unshifted": 0.44567582683567625,
+    "f1_per_class": {
+      "delta_3d_printer": 0.5815602836879432,
+      "fdm_3d_printer_1": 0.18181818181818182,
+      "fdm_3d_printer_2": 0.6557377049180327,
+      "resin_3d_printer": 0.7554671968190855,
+      "bench_drill": 0.0,
+      "mini_cnc_router": 0.08849557522123894,
+      "mini_metal_horizontal_milling_machine": 0.0,
+      "mini_metal_lathe": 0.029556650246305417
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.446,
+    "f1_macro": 0.3662710516546648,
+    "f1_shifted": 0.2582607469767203,
+    "f1_unshifted": 0.5462882261179057,
+    "f1_per_class": {
+      "delta_3d_printer": 0.05825242718446602,
+      "fdm_3d_printer_1": 0.36145481814773156,
+      "fdm_3d_printer_2": 0.7147540983606557,
+      "resin_3d_printer": 0.6983240223463687,
+      "bench_drill": 0.8822882288228823,
+      "mini_cnc_router": 0.1873873873873874,
+      "mini_metal_horizontal_milling_machine": 0.003992015968063872,
+      "mini_metal_lathe": 0.023715415019762844
+    }
+  },
+  "test_wide_metrics": {
+    "accuracy": 0.43325,
+    "f1_macro": 0.357019662103341,
+    "f1_shifted": 0.2538270246167132,
+    "f1_unshifted": 0.5290073912477208,
+    "f1_per_class": {
+      "delta_3d_printer": 0.046875,
+      "fdm_3d_printer_1": 0.3590677348871085,
+      "fdm_3d_printer_2": 0.671892497200448,
+      "resin_3d_printer": 0.7106017191977078,
+      "bench_drill": 0.8295454545454546,
+      "mini_cnc_router": 0.21830985915492956,
+      "mini_metal_horizontal_milling_machine": 0.003992015968063872,
+      "mini_metal_lathe": 0.015873015873015872
+    }
+  }
+}

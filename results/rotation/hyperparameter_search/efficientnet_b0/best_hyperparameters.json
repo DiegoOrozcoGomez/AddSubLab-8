@@ -1,0 +1,11 @@
+{
+  "model": "efficientnet_b0",
+  "lr": 0.00036000911929116066,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "val_f1_macro": 0.9964993138655176,
+  "val_loss": 0.24961136960983277,
+  "val_f1_last_epochs": 0.9965476683262917,
+  "trial": "trial_607f575b76",
+  "criterion": "mean F1 over the last 5 epochs > F1 at the best epoch > val_loss"
+}

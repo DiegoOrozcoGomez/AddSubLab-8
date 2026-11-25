@@ -1,0 +1,5 @@
+{
+  "validation_role": "original test environment (test/ folder)",
+  "test_role": "original validation environment (validation/ folder)",
+  "note": "In the prediction files of this folder, 'test' rows are images of the validation/ folder and vice versa."
+}

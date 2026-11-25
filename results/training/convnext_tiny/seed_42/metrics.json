@@ -18,23 +18,23 @@
   "interpolation": "bicubic",
   "micro_batch": 32,
   "gradient_accumulation": 1,
-  "best_epoch": 11,
-  "epochs_trained": 15,
-  "stop_reason": "maximum epochs",
-  "training_time_s": 681.1188101999287,
-  "test_evaluation_time_s": 2.08125960000325,
+  "best_epoch": 7,
+  "epochs_trained": 12,
+  "stop_reason": "early stopping (5 epochs without val_loss improvement)",
+  "training_time_s": 544.3999851999688,
+  "test_evaluation_time_s": 2.069242099998519,
   "test_metrics": {
-    "accuracy": 0.9755,
-    "precision_macro": 0.9777350607459423,
-    "recall_macro": 0.9755,
-    "f1_macro": 0.9747551421391085,
-    "precision_weighted": 0.9777350607459423,
-    "recall_weighted": 0.9755,
-    "f1_weighted": 0.9747551421391084,
-    "mcc": 0.9725049306051764,
-    "kappa": 0.972,
+    "accuracy": 0.96575,
+    "precision_macro": 0.9699260336717008,
+    "recall_macro": 0.96575,
+    "f1_macro": 0.9641440977036089,
+    "precision_weighted": 0.9699260336717009,
+    "recall_weighted": 0.96575,
+    "f1_weighted": 0.9641440977036089,
+    "mcc": 0.9618297008771239,
+    "kappa": 0.9608571428571429,
     "roc_auc_ovr_macro": 1.0,
-    "ece": 0.0058871659785508755,
+    "ece": 0.007563755869865395,
     "per_class": {
       "delta_3d_printer": {
         "precision": 1.0,
@@ -43,9 +43,9 @@
         "support": 500
       },
       "fdm_3d_printer_1": {
-        "precision": 0.9242144177449169,
+        "precision": 0.8665511265164645,
         "recall": 1.0,
-        "f1": 0.9606147934678194,
+        "f1": 0.9285051067780873,
         "support": 500
       },
       "fdm_3d_printer_2": {
@@ -73,15 +73,15 @@
         "support": 500
       },
       "mini_metal_horizontal_milling_machine": {
-        "precision": 0.8976660682226212,
+        "precision": 0.8928571428571429,
         "recall": 1.0,
-        "f1": 0.9460737937559129,
+        "f1": 0.9433962264150944,
         "support": 500
       },
       "mini_metal_lathe": {
         "precision": 1.0,
-        "recall": 0.804,
-        "f1": 0.8913525498891353,
+        "recall": 0.726,
+        "f1": 0.8412514484356894,
         "support": 500
       }
     },
@@ -158,28 +158,28 @@
       ],
       [
         0,
-        41,
+        77,
         0,
         0,
         0,
         0,
-        57,
-        402
+        60,
+        363
       ]
     ]
   },
   "validation_metrics": {
-    "accuracy": 0.9996875,
-    "precision_macro": 0.9996882793017456,
-    "recall_macro": 0.9996875000000001,
-    "f1_macro": 0.999687499511718,
-    "precision_weighted": 0.9996882793017456,
-    "recall_weighted": 0.9996875,
-    "f1_weighted": 0.999687499511718,
-    "mcc": 0.999642968710159,
-    "kappa": 0.9996428571428572,
+    "accuracy": 0.99953125,
+    "precision_macro": 0.9995330012453301,
+    "recall_macro": 0.99953125,
+    "f1_macro": 0.999531248352045,
+    "precision_weighted": 0.9995330012453301,
+    "recall_weighted": 0.99953125,
+    "f1_weighted": 0.9995312483520451,
+    "mcc": 0.9994645366959253,
+    "kappa": 0.9994642857142857,
     "roc_auc_ovr_macro": 1.0,
-    "ece": 0.0055562903266400095,
+    "ece": 0.011313736154697836,
     "per_class": {
       "delta_3d_printer": {
         "precision": 1.0,
@@ -218,15 +218,15 @@
         "support": 800
       },
       "mini_metal_horizontal_milling_machine": {
-        "precision": 0.9975062344139651,
+        "precision": 0.9962640099626401,
         "recall": 1.0,
-        "f1": 0.9987515605493134,
+        "f1": 0.9981285090455396,
         "support": 800
       },
       "mini_metal_lathe": {
         "precision": 1.0,
-        "recall": 0.9975,
-        "f1": 0.9987484355444305,
+        "recall": 0.99625,
+        "f1": 0.9981214777708203,
         "support": 800
       }
     },
@@ -308,10 +308,11 @@
         0,
         0,
         0,
-        2,
-        798
+        3,
+        797
       ]
     ]
   },
-  "end_date": "2026-10-02T12:32:50"
+  "protocol_note": "trained for the full 15 epochs with the test set evaluated after every epoch; early stopping (patience 5, min_delta 0.0001) applied post hoc",
+  "end_date": "2026-11-23T17:23:11"
 }

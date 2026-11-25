@@ -1,0 +1,9 @@
+rank,trial,optuna_trial,lr,weight_decay,label_smoothing,status,val_f1_macro,val_loss,val_f1_last_epochs,best_epoch,epochs_trained,stop_reason,total_time_s
+1,trial_156552a07b,10,3.41167600767616e-05,0.05,0.1,complete,0.9962369323908677,0.13486467289924622,0.9711990257770177,9,14,early stopping (5 epochs without val_loss improvement),797.1
+2,trial_0fede130e5,4,1.7240460099242286e-05,0.1,0.0,complete,0.9950041130617042,0.01817132335482893,0.953111676892928,5,10,early stopping (5 epochs without val_loss improvement),567.5
+3,trial_28f843f5fc,2,0.00013680095279726916,0.01,0.1,complete,0.9860491594505938,0.13807553780078888,0.9295601051888502,5,10,early stopping (5 epochs without val_loss improvement),566.8
+4,trial_5925ae9a03,1,7.50195444362012e-05,0.05,0.0,complete,0.9982474402774917,0.004136571492726254,0.9231556862426636,4,9,early stopping (5 epochs without val_loss improvement),508.7
+5,trial_609d273cd8,0,0.00012520653814999459,0.01,0.1,complete,0.9994999979999919,0.1114209327697754,0.8943780681159007,4,9,early stopping (5 epochs without val_loss improvement),509.5
+6,trial_607f575b76,3,0.00036000911929116066,0.05,0.1,complete,0.9974997499749976,0.16417825973033906,0.7376381169700369,2,7,early stopping (5 epochs without val_loss improvement),397.6
+7,trial_38380ae27e,6,0.0003728160826604057,0.01,0.0,complete,0.9930015519656648,0.01981189405708028,0.7357208422620747,1,6,early stopping (5 epochs without val_loss improvement),340.5
+8,trial_ddde29f639,7,0.0009039575873246983,0.01,0.1,complete,0.9982461984800064,0.13760621190071107,0.20665210953678467,1,6,early stopping (5 epochs without val_loss improvement),341.0

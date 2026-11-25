@@ -1,0 +1,6 @@
+panel,file,annotation,prediction_ResNet-50,prediction_DenseNet-121,prediction_Xception,prediction_EfficientNet-B0,prediction_ConvNeXt-T,prediction_MaxViT-T,prediction_Swin-T,prediction_ViT-B/16
+(a),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0023.jpg,18/80 wrong,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,FDM 3D 1
+(b),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0002.jpg,17/80 wrong,Mini H. mill,Mini H. mill,Mini H. mill,FDM 3D 1,Mini H. mill,Mini H. mill,Mini H. mill,FDM 3D 1
+(c),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0201.jpg,16/80 wrong,Mini H. mill,Mini H. mill,Mini H. mill,Mini CNC router,Mini H. mill,Mini H. mill,Mini H. mill,FDM 3D 1
+(d),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0035.jpg,15/80 wrong,Mini H. mill,Mini H. mill,Mini H. mill,Mini CNC router,Mini H. mill,Mini H. mill,Mini H. mill,FDM 3D 1
+(e),test/mini_metal_horizontal_milling_machine/mini_metal_horizontal_milling_machine_test_0377.jpg,3/80 wrong,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill,Mini H. mill

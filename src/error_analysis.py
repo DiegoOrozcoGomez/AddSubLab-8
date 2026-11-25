@@ -353,8 +353,12 @@ def fig_training_reference(table, cls, names):
 # =============================================================================
 
 def checkpoint_path(model, seed):
-    for p in (WEIGHTS_DIR / f"{model}_seed{seed}.pt",
-              RESULTS_DIR / "training" / model / f"seed_{seed}" / "best.pt"):
+    # The weights of the runs in RESULTS_DIR/training come first, so that the
+    # Grad-CAM models are the same runs as the error tables.
+    for p in (RESULTS_DIR / "training" / model / f"seed_{seed}" / "best.pt",
+              WEIGHTS_DIR / "training" / model / f"seed_{seed}" / "best.pt",
+              WEIGHTS_DIR / f"{model}_seed{seed}.pt",
+              WEIGHTS_DIR / "entrenamientos" / model / f"semilla_{seed}" / "mejor.pt"):
         if p.exists():
             return p
     return None
@@ -380,7 +384,13 @@ def compute_gradcam(imgs, models, folders, seed=None):
         cfg = cfgs[m]
         model = timm.create_model(timm_name, pretrained=False, num_classes=len(folders))
         ck = torch.load(ck_path, map_location="cpu", weights_only=False)
-        model.load_state_dict(ck["model"])
+        state = ck
+        if isinstance(ck, dict):
+            for k in ("model", "modelo", "state_dict", "model_state_dict"):
+                if k in ck and isinstance(ck[k], dict):
+                    state = ck[k]
+                    break
+        model.load_state_dict(state)
         model = model.to(device).eval()
         prefix = getattr(model, "num_prefix_tokens", 0)
         capt = {}

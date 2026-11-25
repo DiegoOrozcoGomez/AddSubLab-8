@@ -25,7 +25,7 @@ epoch, a validation-test rotation, ViT-B/16 with ImageNet-21k pretraining, and
 an evaluation of background reliance with masked and background-swapped test
 images.
 
-* **Dataset and trained weights:** Zenodo, https://doi.org/10.5281/zenodo.23485468
+* **Dataset and trained weights:** Zenodo, https://doi.org/10.5281/zenodo.24544128 (version 2, weights of the revised article)
 * **Code:** this repository (MIT License)
 
 ## Dataset

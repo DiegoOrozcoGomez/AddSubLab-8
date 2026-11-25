@@ -1,0 +1,23 @@
+script_number,article_figure,file,content,width_mm,height_mm
+-,Fig. 1,(src/dataset_overview.py),dataset examples,,
+Fig. 2,Fig. 2,fig02_hyperparameter_search,hyperparameter_search,181.0,100.0
+Fig. 3,Fig. 3,fig03_loss_curves,loss_curves,181.0,100.0
+Fig. 4,Fig. 4,fig04_accuracy_curves,accuracy_curves,181.0,100.0
+Fig. 5,Fig. 5,fig05_test_results,test_results,88.0,62.0
+Fig. 6,Fig. 6,fig06_critical_difference,critical_difference,181.0,48.0
+Fig. 7,Fig. 7,fig07_efficiency_vs_performance,efficiency_vs_performance,181.0,72.0
+Fig. 8,Fig. 8,fig08_calibration_ece,calibration_ece,88.0,60.0
+Fig. 9,Fig. 9,fig09_validation_vs_test,validation_vs_test,88.0,70.0
+Fig. 10,Fig. 10,fig10_ablation_30_epochs,ablation_30_epochs,181.0,62.0
+-,Fig. 11,results/revision_analysis/fig_test_f1_per_epoch,test F1 per epoch,,
+Fig. 11,Fig. 12,fig11_confusion_matrices,confusion_matrices,181.0,112.0
+Fig. 12,Fig. 13,fig12_f1_per_class,f1_per_class,181.0,72.0
+Fig. 13,Fig. 14,fig13_error_map_mini_metal_lathe,error_map_mini_metal_lathe,181.0,48.0
+Fig. 14,Fig. 15,fig14_error_mosaic_mini_metal_lathe,error_mosaic_mini_metal_lathe,181.0,123.0
+Fig. 15,Fig. 16,fig15_training_reference_mini_metal_lathe,training_reference_mini_metal_lathe,181.0,197.0
+Fig. 16,Fig. 17,fig16_gradcam_mini_metal_lathe,gradcam_mini_metal_lathe,181.0,213.0
+Fig. 19,Fig. 18,fig19_protocol_50_epochs,protocol_50_epochs,181.0,105.0
+Fig. 20,Fig. 19,fig20_error_map_mini_metal_horizontal_milling_machine,error_map_mini_metal_horizontal_milling_machine,181.0,48.0
+Fig. 21,Fig. 20,fig21_error_mosaic_mini_metal_horizontal_milling_machine,error_mosaic_mini_metal_horizontal_milling_machine,181.0,123.0
+Fig. 22,Fig. 21,fig22_training_reference_mini_metal_horizontal_milling_machine,training_reference_mini_metal_horizontal_milling_machine,181.0,197.0
+Fig. 23,Fig. 22,fig23_gradcam_mini_metal_horizontal_milling_machine,gradcam_mini_metal_horizontal_milling_machine,181.0,213.0

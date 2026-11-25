@@ -1,0 +1,46 @@
+
+=== Friedman + Nemenyi (test macro F1; blocks = seeds) ===
+n = 10 seeds, k = 8 models
+Friedman chi2 = 41.723, p = 5.879e-07
+Nemenyi critical difference (alpha = 0.05): 3.320
+Average ranks: MaxViT-T 1.85, Xception 2.00, DenseNet-121 4.20, ConvNeXt-T 4.30, Swin-T 4.90, ResNet-50 5.25, EfficientNet-B0 6.20, ViT-B/16 7.30
+Significant pairs: EfficientNet-B0 vs MaxViT-T (p = 0.0018); EfficientNet-B0 vs Xception (p = 0.0032); MaxViT-T vs ResNet-50 (p = 0.0402); MaxViT-T vs ViT-B/16 (p = 0.0000); ViT-B/16 vs Xception (p = 0.0000)
+
+=== Exact McNemar per seed (Holm correction, 28 pairs) ===
+Pairs significant in all seeds: 8 of 28
+WARNING: treats all frames as independent (optimistic p-values).
+
+=== McNemar with frame subsampling (median p_Holm over offsets) ===
+Consistent = significant in >= 4 of 5 seeds, with no reversals.
+Step 10 (~400 images per subsample): 3 of 28 consistent pairs
+    Xception > ViT-B/16 (9/10 seeds)
+    ConvNeXt-T > ViT-B/16 (9/10 seeds)
+    MaxViT-T > ViT-B/16 (9/10 seeds)
+Step 20 (~200 images per subsample): 3 of 28 consistent pairs
+    DenseNet-121 > ViT-B/16 (9/10 seeds)
+    Xception > ViT-B/16 (9/10 seeds)
+    MaxViT-T > ViT-B/16 (9/10 seeds)
+Step 40 (~96 images per subsample): 1 of 28 consistent pairs
+    MaxViT-T > ViT-B/16 (9/10 seeds)
+
+=== Correlations (exploratory) ===
+Validation F1 vs test F1 (within model): rho = 0.035, p = 0.7576 (n = 80)
+Best epoch vs test F1 (within model): rho = -0.088, p = 0.4359 (n = 80)
+
+=== Calibration (temperature scaling fitted on validation) ===
+MaxViT-T         ECE 0.0027 -> 0.0022   T = 0.12
+Xception         ECE 0.0952 -> 0.0049   T = 0.06
+ConvNeXt-T       ECE 0.0232 -> 0.0288   T = 0.20
+DenseNet-121     ECE 0.1883 -> 0.0318   T = 0.05
+Swin-T           ECE 0.1108 -> 0.0546   T = 0.12
+ResNet-50        ECE 0.1045 -> 0.0797   T = 0.10
+EfficientNet-B0  ECE 0.1461 -> 0.0817   T = 0.10
+ViT-B/16         ECE 0.0932 -> 0.1214   T = 0.71
+
+=== ablation_30_epochs: paired comparison with the 15-epoch protocol ===
+Pairs: 10; mean F1 difference = -0.60 points (median -0.12)
+Wilcoxon signed-rank: W = 21.0, p = 0.5566
+
+=== protocol_50_epochs: paired comparison with the 15-epoch protocol ===
+Pairs: 14; mean F1 difference = -0.82 points (median +0.00)
+Wilcoxon signed-rank: W = 38.0, p = 0.9375

@@ -1,0 +1,9 @@
+class,images,images_with_some_error,errors_in_half_or_more_runs,errors_in_all_runs,error_rate_%
+Mini Metal Lathe,500,500,36,0,31.2
+Mini Metal Horizontal Milling Machine,500,500,0,0,9.38
+Mini CNC Router,500,500,0,0,8.89
+Delta 3D Printer,500,433,0,0,3.42
+Fused Deposition Modeling 3D Printer 1,500,29,0,0,0.1
+Fused Deposition Modeling 3D Printer 2,500,7,0,0,0.02
+Bench Drill,500,0,0,0,0.0
+Resin 3D Printer,500,0,0,0,0.0

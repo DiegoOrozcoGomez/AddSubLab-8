@@ -1,0 +1,6 @@
+panel,file,annotation,prediction_ResNet-50,prediction_DenseNet-121,prediction_Xception,prediction_EfficientNet-B0,prediction_ConvNeXt-T,prediction_MaxViT-T,prediction_Swin-T,prediction_ViT-B/16
+(a),test/mini_metal_lathe/mini_metal_lathe_test_0478.jpg,47/80 wrong,Mini CNC router,Mini CNC router,Mini lathe,Mini H. mill,Mini H. mill,Mini lathe,Mini CNC router,FDM 3D 1
+(b),test/mini_metal_lathe/mini_metal_lathe_test_0006.jpg,46/80 wrong,Mini CNC router,Mini H. mill,Mini lathe,Mini H. mill,FDM 3D 1,Mini lathe,FDM 3D 1,FDM 3D 1
+(c),test/mini_metal_lathe/mini_metal_lathe_test_0040.jpg,46/80 wrong,Mini CNC router,Mini CNC router,Mini lathe,Mini CNC router,FDM 3D 1,Mini lathe,Mini H. mill,FDM 3D 1
+(d),test/mini_metal_lathe/mini_metal_lathe_test_0018.jpg,45/80 wrong,Mini CNC router,Mini H. mill,Mini lathe,Mini H. mill,FDM 3D 1,Mini lathe,Resin 3D,FDM 3D 1
+(e),test/mini_metal_lathe/mini_metal_lathe_test_0361.jpg,12/80 wrong,Mini lathe,FDM 3D 1,Mini lathe,FDM 3D 2,FDM 3D 1,Mini lathe,FDM 3D 1,FDM 3D 1
